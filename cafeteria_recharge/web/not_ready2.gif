@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>
+      Coffee Loading... by Yiker - Dribbble
+  </title>
+  <meta name="description" content="Great work from a designer in the Dribbble community; your best resource to discover and connect with designers worldwide." />
+  <meta charset="utf-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"7840d0c136","applicationID":"2909452","transactionName":"Jg1bREUOClsARUpHABcHUF5ECQlDFhgWXAwS","queueTime":1,"applicationTime":58,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <meta name="theme-color" content="#333333">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <meta name="referrer" content="origin-when-cross-origin">
+  <!--[if gte IE 7]><!-->
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/master-071d2b77eedc67d81800dd47d7892a47cf32da06f97a2f70fa1f3e77ea62f442.css" />
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/infinite-076624da9ec905a875e10ad4be445c3511295c5baa04f72695f24fa97060d19e.css" /><link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/color-browse-ec450c55b6448bcaeb7ae6837690734834c895de1feb1e7300cc7c1b483e5e17.css" />
+  <link rel="stylesheet" media="screen, projection" href="https://cdn.dribbble.com/assets/attachment-overlay-7a12596ba47e2a470ef6ea3482cd3de494d58e892359be13d57bab05b4f8efa8.css" />
+  <!-- <![endif]-->
+  <link rel="stylesheet" media="print" href="https://cdn.dribbble.com/assets/print-af897c350716ce875940317977d37c5289e6aa39cb324abab961d4b514bd61f2.css" />
+  <link href="https://cdn.dribbble.com/assets/dribbble-vector-ball-95ca193529993e9b3904f7adb541680aba196642f557cfaf3cdbb0a48a284be4.svg" rel="mask-icon" color="#ea4c89" />
+<link href="https://cdn.dribbble.com/assets/apple-touch-icon-precomposed-4a188d3f4dd693b67971fda843fd4bdeae751f9a245e3b878cae17e0a9d6a0a3.png" rel="apple-touch-icon-precomposed" />
+<link href="https://cdn.dribbble.com/assets/favicon-63b2904a073c89b52b19aa08cebc16a154bcf83fee8ecc6439968b1e6db569c7.ico" rel="icon" />
+<link href="https://cdn.dribbble.com/assets/dribbble-ball-192-ec064e49e6f63d9a5fa911518781bee0c90688d052a038f8876ef0824f65eaf2.png" sizes="192x192" rel="icon" />
+
+  
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Fz1G5SrolhfpyRhgQCfFdztb9RscUAT9uGD1DQk1zu11MCzmzIJlh8YyyGxy3Z5TN9NG9AwVU7C7usvNrt7vmg==" />
+    <meta name="description" content="I like coffee！" />
+<meta property="og:description" content="I like coffee！" />
+<meta name="twitter:description" content="I like coffee！" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Coffee Loading..." />
+<meta name="twitter:title" content="Coffee Loading..." />
+<meta property="og:site_name" content="Dribbble" />
+<meta name="twitter:site" content="@dribbble" />
+<meta name="twitter:domain" content="dribbble.com" />
+<meta property="og:url" content="https://dribbble.com/shots/3160360-Coffee-Loading" />
+<meta name="twitter:url" content="https://dribbble.com/shots/3160360-Coffee-Loading" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://cdn.dribbble.com/users/1399014/screenshots/3160360/loadingdb86.gif" />
+<meta name="twitter:image" content="https://cdn.dribbble.com/users/1399014/screenshots/3160360/loadingdb86.gif" />
+<meta name="twitter:label1" content="Dribbbled by" />
+<meta name="twitter:data1" content="@exciting" />
+
+
+  <meta name="apple-itunes-app" content="app-id=1228326440, app-argument=https://dribbble.com/shots/3160360-Coffee-Loading">
+
+  <script>
+    if (location.hash.match(/^#\./) && window.history) {
+      window.history.replaceState({}, window.title, location.origin + location.pathname + location.search)
+    }
+  </script>
+  <noscript>
+    <style>ol.dribbbles { display: block !important }</style>
+  </noscript>
+  <meta name="segment-controller" content="screenshots" />
+<meta name="segment-action" content="show" />
+
+</head>
+
+<body id="details" class="logged-out not-pro not-player not-self not-team not-on-team not-scout  grid-small grid-with-meta">
+
+
+<div id="header" role="banner" class="group">
+  <div id="header-inner" class="group">
+
+    <div id="logo">
+      <a href="/"><img alt="dribbble" src="https://cdn.dribbble.com/assets/logo-bw-0200c7483844c355752e89efaa4ba89b83c9c591d70254ba10f4b25d901359d0.gif" /></a>
+    </div>
+
+    <a href="#nav" id="toggle-nav">Toggle navigation</a>
+
+    <ul id="nav" role="navigation">
+      <li id="t-search" role="search">
+        <form id="search" action="https://dribbble.com/search">
+          <input class="search-text" type="text" name="q" placeholder="Search " value="" />
+          
+        </form>
+      </li>
+        <li id="t-signin" data-top-level="signin">
+          <a href="https://dribbble.com/session/new?return_to=%2Fshots%2F3160360-Coffee-Loading">
+            <span>Sign in</span>
+</a>        </li>
+        <li id="t-signup" data-top-level="signup">
+          <a data-signup-trigger="true" data-context="top-nav" href="/signup/new">Sign up</a>
+        </li>
+
+      <li id="t-shots" data-top-level="shots">
+        <a class="has-sub" href="/shots">Shots</a>
+        <ul class="tabs">
+  <li><a href="/shots">Popular Shots</a></li>
+  <li><a href="/shots?sort=recent">Recent Shots</a></li>
+  <li class="separate"><a href="/shots?list=debuts">Debuts</a></li>
+  <li><a href="/shots?list=playoffs">Playoffs</a></li>
+  
+</ul>
+
+      </li>
+      <li id="t-players" data-top-level="players">
+        <a class="has-sub" href="/designers">Designers</a>
+        <ul class="tabs">
+  <li><a href="/designers?sort=trending">Trending Designers</a></li>
+  <li><a href="/designers?sort=popular">Popular Designers</a></li>
+  
+</ul>
+
+      </li>
+      <li id="t-teams" data-top-level="teams">
+        <a class="has-sub" href="/teams">Teams</a>
+        <ul class="tabs">
+  <li><a href="/teams?sort=trending">Trending Teams</a></li>
+  <li><a href="/teams?sort=popular">Popular Teams</a></li>
+  <li class="separate"><a href="/teams/info">Add Your Design Team</a></li>
+</ul>
+
+
+
+      </li>
+      <li id="t-community" data-top-level="community">
+        <a class="has-sub" href="/stories">Community</a>
+        <ul class="tabs">
+  <li><a href="/stories">Blog</a></li>
+  <li><a href="/overtime">Podcast</a></li>
+  <li><a href="/meetups">Meetups</a></li>
+  <li><a href="/hangtimes/2018-seattle">Hang Time Seattle</a></li>
+  <li class="separate"><a href="/meetups/new">Host a Meetup</a></li>
+</ul>
+
+      </li>
+      <li id="t-jobs" data-top-level="jobs">
+        <a href="/jobs">Jobs</a>
+        <ul class="tabs">
+          <li><a href="/jobs">All</a></li>
+          <li><a href="/jobs?location=Anywhere">Remote</a></li>
+          <li><a href="/jobs?teams_only=true">Teams Hiring</a></li>
+          
+          <li class="separate"><a href="/jobs/info">Post a Job</a></li>
+        </ul>
+      </li>
+        <li id="t-hiring" data-top-level="hiring">
+          <a href="/hiring">Hiring</a>
+          <ul class="tabs">
+            <li><a href="/hiring">Hiring at Dribbble</a></li>
+            <li class="separate"><a href="/jobs/info">Post a Job</a></li>
+            <li><a href="/scout/info">Scout Designers</a></li>
+            <li><a href="/teams/info">Add Your Design Team</a></li>
+            <li class="external"><a href="https://crew.co/?utm_source=dribbble&amp;utm_content=dribbble-scout-nav">Hire on Crew</a></li>
+          </ul>
+        </li>
+      <li id="t-more" data-top-level="more">
+        <a href="/about">
+          <span>More</span>
+</a>        <ul class="tabs">
+          <li><a href="/about">About Dribbble</a></li>
+          <li><a href="https://shop.dribbble.com/">Dribbble Store</a></li>
+          <li><a href="http://help.dribbble.com/">Help</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/guidelines">Guidelines</a></li>
+          <li><a href="/branding">Brand</a></li>
+          <li><a href="/integrations">Integrations</a></li>
+          <li><a href="http://developer.dribbble.com">API</a></li>
+          <li><a href="/advertise">Advertise</a></li>
+          <li class="separate"><a href="/goods">Goods by Designers</a></li>
+          <li><a href="/colors">Colors</a></li>
+          <li><a href="/places">Designers by Location</a></li>
+          <li class="separate"><a href="/ios">iOS App</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div> <!-- /header -->
+
+<hr />
+
+<div class="ajax notice hide">
+  <h2></h2>
+</div>
+
+
+
+<div id="wrap">
+  
+  
+
+  <div id="wrap-inner">
+    <div id="content" role="main">
+      <div class="notice-alert">
+        <h3><!-- message goes here --></h3>
+        <a href="#" class="close" aria-label="close">
+          <img width="25" alt="close" src="https://cdn.dribbble.com/assets/icon-shot-x-light-2x-a4fcd61bdb114023583740bd9f5a46734e243e5be2bff1baa3e1cc33e7877fcd.png" />
+        </a>
+      </div>
+
+      
+
+<div class="non-overlay group">
+  
+
+
+
+
+
+
+
+
+  <div class="slat-header user ">
+
+    <a class="hoverable url" rel="contact" title="Yiker" href="/exciting"><picture>
+  <source srcset="https://cdn.dribbble.com/users/1399014/avatars/normal/9fa2de04da5bc82a6c5a9ecb3103c4ae.jpg?1476281620" media="(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx)">
+  <source srcset="https://cdn.dribbble.com/users/1399014/avatars/small/9fa2de04da5bc82a6c5a9ecb3103c4ae.jpg?1476281620">
+  <img class="photo" src="https://cdn.dribbble.com/users/1399014/avatars/small/9fa2de04da5bc82a6c5a9ecb3103c4ae.jpg?1476281620" />
+</picture>
+</a>
+    <h1>Coffee Loading...</h1>
+
+    <h2 class="shot-byline">
+      <span class="attribution ">
+        <span class="shot-byline-user">
+          by <a class="url hoverable" rel="contact" href="/exciting">Yiker</a>
+        </span>
+      </span>
+
+
+
+        <span class="shot-byline-date">
+          on <a href="/shots?date=2016-12-15">Dec 15, 2016</a>
+        </span>
+    </h2>
+  </div>
+
+  <div class="main-shot zoomable">
+    <div class="the-shot" data-screenshot_id="3160360" data-img-src="https://cdn.dribbble.com/users/1399014/screenshots/3160360/loadingdb86.gif">
+      <div class="single group">
+        <div class="single-grid"><div class="single-img">
+          <img src="https://cdn.dribbble.com/users/1399014/screenshots/3160360/loadingdb86.gif" alt="Loadingdb86" />
+        </div></div>
+      </div>
+    </div>
+
+    <div class="screenshot-info-wrapper">
+      <div class="screenshot-conversation has-comments">
+
+          <div class="shot-desc">
+            <p>I like coffee！</p>
+          </div>
+
+
+        
+
+        <div id="comments-section"></div>
+      </div>
+
+      <div class="screenshot-meta ">
+
+          <ul class="shot-stats">
+    <li>
+    <script>
+      if (typeof(Dribbble) != "undefined" && typeof(Dribbble.Shots) != "undefined") {
+        Dribbble.Shots.update(3160360, {
+          likes_count: 41,
+          liked: false
+      });
+      }
+    </script>
+
+      <a class="stats-action like-shot" title="Like this shot" data-signup-trigger="true" data-context="like-shot" href="/signup/new">
+        <img src="https://cdn.dribbble.com/assets/icon-shotstat-like-6a1e9e9db48b9b788639f05a658379b7bb027a75d256127f812bf9392664396f.png" alt="Icon shotstat like" />
+        <span class="stats-label">Like?</span>
+</a>
+    <a class="likes-count stats-num" href="/shots/3160360-Coffee-Loading/fans">
+      41
+      <span class="stats-num-label">
+        likes
+      </span>
+</a>    </li>
+
+  
+<li data-bucket-container="true">
+    <a class="stats-action bucket-shot" data-signup-trigger="true" data-context="bucket-shot" href="/signup/new">
+    <img src="https://cdn.dribbble.com/assets/icon-shotstat-bucket-18e67c2d1dc7d2d6ad6f863b1c34e685ed23da9be0cb204f16598ed149e20b9e.png" alt="Icon shotstat bucket" />
+    <span class="stats-label">Bucket</span>
+</a>
+
+
+</li>
+
+  
+  <li>
+  <span class="stats-action">
+    <img src="https://cdn.dribbble.com/assets/icon-shotstat-view-abb9b55b53f093c5091b6deaa93bd679a341c02331ed333d9c043c48cb62af8e.png" alt="Icon shotstat view" />
+    <span class="stats-label">Views</span>
+  </span>
+  <span class="stats-num views-count">
+    1,165
+    <span class="stats-num-label">
+      views
+    <span>
+  </span>
+</li>
+
+  <li class="shot-stats-share">
+  <span class="stats-action">
+    <img src="https://cdn.dribbble.com/assets/icon-shotstat-share-128ae71c26985fc7325ac5362aba434686f12fdfffa45ed874262a19f923b071.png" alt="Icon shotstat share" />
+    <span class="stats-label">Share</span>
+  </span>
+
+  <span class="stats-num">
+    
+<div class="share-btns" data-share-shot="3160360">
+</div>
+
+  </span>
+</li>
+
+
+  <li class="shot-stats-colors">
+      <a rel="tipsy" title="Download this color palette (.aco)" class="stats-action" href="/shots/3160360-Coffee-Loading/colors.aco"><img width="20" height="20 " src="https://cdn.dribbble.com/assets/icon-shotstat-drop-0152bfcbd3cb7ed50e73b830df47c754f061a376a662eac8841ad45316598d97.png" alt="Icon shotstat drop" /></a>
+      
+
+<ul class="color-chips group">
+      <li class="color">
+        <a style="background-color: #69483E" title="#69483E" href="/colors/69483E">#69483E</a>
+      </li>
+      <li class="color">
+        <a style="background-color: #F9B82E" title="#F9B82E" href="/colors/F9B82E">#F9B82E</a>
+      </li>
+      <li class="color">
+        <a style="background-color: #93733F" title="#93733F" href="/colors/93733F">#93733F</a>
+      </li>
+      <li class="color">
+        <a style="background-color: #FFFFFF" title="#FFFFFF" href="/colors/FFFFFF">#FFFFFF</a>
+      </li>
+      <li class="color">
+        <a style="background-color: #D0992B" title="#D0992B" href="/colors/D0992B">#D0992B</a>
+      </li>
+      <li class="color">
+        <a style="background-color: #C9C9C9" title="#C9C9C9" href="/colors/C9C9C9">#C9C9C9</a>
+      </li>
+</ul>
+
+  </li>
+</ul>
+
+
+
+        
+
+
+          <div class="related-player-shots">
+            <div class="follow-prompt">
+  <a class="form-btn light-btn follow compact" rel="tipsy" title="Follow Yiker" data-signup-trigger="" data-context="follow-user" href="/exciting/followers">
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="9nv7ercytcxwr8w94xyu450ruzru900" class="icon"><title id="9nv7ercytcxwr8w94xyu450ruzru900">Plus</title>
+  <path fill="#1C1B1A" d="M10,10h3.5c0.551,0,1-0.45,1-1l-0.002-2c0-0.551-0.451-1-1-1L10,6.001V2.502c0-0.551-0.449-1-1-1,L7,1.5c-0.551,0-1,0.449-1,1v3.502H2.5c-0.549,0-0.998,0.449-1,1L1.502,9c0,0.551,0.449,1,1,1H6v3.5c0,0.55,0.451,1,1,1h2,c0.551,0,1-0.45,1-1V10z"></path>
+</svg>
+
+    <span>Follow</span>
+</a>  <a class="form-btn link-btn unfollow compact" href="/exciting/followers/exciting">
+    <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" width="16" height="16" viewBox="0 0 16 16" role="img" aria-labelledby="qk1pdof07bf1955mwij0u7tq8jawgko" class="icon"><title id="qk1pdof07bf1955mwij0u7tq8jawgko">Check</title>
+  <path fill="#1C1B1A" d="M13.711,3.352l-1.635-1.147C11.625,1.889,10.998,2,10.682,2.45L6.23,8.799L3.775,7.077,C3.324,6.761,2.697,6.872,2.381,7.322L1.234,8.959c-0.316,0.451-0.207,1.078,0.244,1.392l3.275,2.297l0,0l0.027,0.02l1.609,1.128,c0.227,0.158,0.496,0.209,0.75,0.164c0.252-0.044,0.488-0.185,0.646-0.409l6.17-8.807C14.273,4.294,14.162,3.667,13.711,3.352z"></path>
+</svg>
+
+    <span>Following</span>
+</a>  <a class="form-btn light-btn unblock compact" data-hover="Unblock" href="/blocks/exciting">
+    <span>Blocked</span>
+</a></div>
+            <h3 class="meta-head">
+              <a href="/exciting">
+                More from Yiker
+</a>            </h3>
+
+            <ol class="more-thumbs">
+    <li>
+      <a href="/shots/4464150-Logo-BeTime">
+        <img alt="Logo—BeTime" src="https://cdn.dribbble.com/users/1399014/screenshots/4464150/betime___b__teaser.jpg" />
+</a>    </li>
+    <li>
+      <a href="/shots/4454451-Book-App-UI">
+        <img alt="Book App UI" src="https://cdn.dribbble.com/users/1399014/screenshots/4454451/boooks_teaser.jpg" />
+</a>    </li>
+    <li>
+      <a href="/shots/4427909-Book-app-Bookshelf-Detail">
+        <img alt="Book app - Bookshelf+Detail" src="https://cdn.dribbble.com/users/1399014/screenshots/4427909/boook2.3_teaser.jpg" />
+</a>    </li>
+    <li>
+      <a href="/shots/4418012-Book-app-List1">
+        <img alt="Book app - List1" src="https://cdn.dribbble.com/users/1399014/screenshots/4418012/boook2.2_teaser.jpg" />
+</a>    </li>
+</ol>
+
+          </div>
+
+          <h3 class="meta-head">Tags</h3>
+  <div class="tags-section">
+    <ol id="tags" class="popular-tags">
+      <li id="tag-li-6533" class="tag">
+  <a rel="tag" href="/exciting/tags/ae">    <strong>ae</strong>
+</a></li>
+<li id="tag-li-3007" class="tag">
+  <a rel="tag" href="/exciting/tags/animation">    <strong>animation</strong>
+</a></li>
+<li id="tag-li-193" class="tag">
+  <a rel="tag" href="/exciting/tags/coffee">    <strong>coffee</strong>
+</a></li>
+<li id="tag-li-1477" class="tag">
+  <a rel="tag" href="/exciting/tags/cute">    <strong>cute</strong>
+</a></li>
+<li id="tag-li-3440" class="tag">
+  <a rel="tag" href="/exciting/tags/gif">    <strong>gif</strong>
+</a></li>
+<li id="tag-li-225" class="tag">
+  <a rel="tag" href="/exciting/tags/illustration">    <strong>illustration</strong>
+</a></li>
+<li id="tag-li-740" class="tag">
+  <a rel="tag" href="/exciting/tags/loading">    <strong>loading</strong>
+</a></li>
+<li id="tag-li-54" class="tag">
+  <a rel="tag" href="/exciting/tags/ui">    <strong>ui</strong>
+</a></li>
+
+    </ol>
+  </div>
+
+
+            <div class="ad-shot">
+      <div class="ad carbon target notloaded">
+</div>
+
+    </div>
+
+
+        
+      </div>
+    </div>
+  </div> <!-- /main -->
+
+<div id="kbd-legend">
+  <p>keyboard shortcuts:
+    <span><strong>L</strong> or <strong>F</strong> like</span>
+      <span><strong>Z</strong> toggle zoom</span>
+  </p>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div id="footer" role="contentinfo">
+  <div id="footer-inner">
+    <div class="group">
+      <div class="footer-mod">
+        <p class="logo"><a href="/"><img width="80" alt="dribbble" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" /></a><br />Show and tell for designers</p>
+
+        <p class="about">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.</p>
+
+        <p class="follow">
+          <a href="/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-dribbble-8706862cdb0afa7f43f9e0218b073515f0a2bef19780961d324ae4620ebe249b.png" alt="Icon team dribbble" /></a>
+          <a href="http://twitter.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-twitter-1fa6921d96b16e47f00ad0381ebbab59ba089c22b21f9bce783c9a4a077f40e9.png" alt="Icon team twitter" /></a>
+          <a href="http://facebook.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-facebook-4d63851997b88eb903858057327d93df9f950a55c5104a3a19206f2005682ea3.png" alt="Icon team facebook" /></a>
+          <a href="http://instagram.com/dribbble"><img width="24" src="https://cdn.dribbble.com/assets/icon-team-instagram-5dfdcd1478ea4a1c1e109b32adbd3878062aa1eb571da63ac379e0da1d2d5762.png" alt="Icon team instagram" /></a>
+          <a href="/stories">
+            <img width="24" src="https://cdn.dribbble.com/assets/icon-team-blog-2705adcb7ee6522051e175d10683208f0fa0ad17daa15fdf3f36aca99c540312.png" alt="Icon team blog" />
+</a>        </p>
+      </div>
+      <div class="footer-mod">
+        <div class="extra-links">
+          <h3><a href="/">Dribbble</a></h3>
+          <ul>
+            <li><a id="f-home" href="/about">About</a></li>
+            <li><a href="http://help.dribbble.com">Help</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/terms">Terms</a></li>
+            <li><a href="/guidelines">Guidelines</a></li>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="https://shop.dribbble.com/">Shop</a></li>
+            <li><a href="/testimonials">Testimonials</a></li>
+            <li><a href="/branding">Brand</a></li>
+            <li><a href="/advertise">Advertise</a></li>
+            <li><a href="http://developer.dribbble.com">API</a></li>
+            <li><a href="/integrations">Integrations</a></li>
+            <li><a href="/ios">iOS App</a></li>
+          </ul>
+        </div>
+        <div class="hiring-links">
+          <h3><a href="/hiring">Hiring at Dribbble</a></h3>
+          <ul>
+            <li><a href="/jobs/info">Post a job</a></li>
+            <li><a href="/scout/info">Scout designers</a></li>
+            <li><a href="/teams/info">Add your team</a></li>
+            <li><a class="external" href="https://crew.co/?utm_source=dribbble&amp;utm_content=dribbble-scout-nav">Crew: Hire freelancers</a></li>
+          </ul>
+        </div>
+
+          <div class="job-links">
+            <h3><a href="/jobs">Jobs for Designers</a></h3>
+            <ol class="jobs-list">
+  
+<li class="group">
+  <a class="item-team" rel="tipsy" title="Visit the team’s profile" href="/Scout24">
+  <img src="https://cdn.dribbble.com/users/1970950/avatars/normal/e8d18d92015f7a2f6cea0e496d773543.png?1509636007" alt="E8d18d92015f7a2f6cea0e496d773543" />
+</a>
+
+  <a class="job-edit" rel="tipsy" title="Edit this job" data-creator-id="1970940" href="/jobs/manage?edit_job_id=14750">
+    <img src="https://cdn.dribbble.com/assets/icon-edit-button-8d0f2493aa649d9e18d5cf27ee32c93aaa6488ddda85b481f6ca341b85fde845.png" alt="Icon edit button" />
+</a>
+  <a class="item-link group" data-url="https://boards.greenhouse.io/scout24/jobs/1090273#.WsNQoX8uBaQ" rel="nofollow" href="/jobs/14750?source=footer">
+    <span class="item-info">
+      <span class="item-title">Scout24</span>
+      <span class="item-desc">Senior UX Designer (m/f)</span>
+    </span>
+
+    <span class="item-meta">Munich</span>
+
+</a></li>
+
+<li class="group">
+  <a class="item-team" rel="tipsy" title="Visit the team’s profile" href="/vaangroup">
+  <img src="https://cdn.dribbble.com/users/2075548/avatars/normal/dbf395d2cfcc811f2e3ba9dedf5f91e0.png?1515768676" alt="Dbf395d2cfcc811f2e3ba9dedf5f91e0" />
+</a>
+
+  <a class="job-edit" rel="tipsy" title="Edit this job" data-creator-id="1371266" href="/jobs/manage?edit_job_id=14746">
+    <img src="https://cdn.dribbble.com/assets/icon-edit-button-8d0f2493aa649d9e18d5cf27ee32c93aaa6488ddda85b481f6ca341b85fde845.png" alt="Icon edit button" />
+</a>
+  <a class="item-link group" data-url="https://weworkremotely.com/remote-jobs/the-vaan-group-web-designer-for-ecommerce-agency" rel="nofollow" href="/jobs/14746?source=footer">
+    <span class="item-info">
+      <span class="item-title">The Vaan Group</span>
+      <span class="item-desc">Lead Web Designer &amp; Art Director</span>
+    </span>
+
+    <span class="item-meta">Anywhere</span>
+
+</a></li>
+
+<li class="group">
+  <a class="item-team" rel="tipsy" title="Visit the team’s profile" href="/dribbble">
+  <img src="https://cdn.dribbble.com/users/39/avatars/normal/apple-flat-precomposed.png?1388523974" alt="Apple flat precomposed" />
+</a>
+
+  <a class="job-edit" rel="tipsy" title="Edit this job" data-creator-id="634228" href="/jobs/manage?edit_job_id=14795">
+    <img src="https://cdn.dribbble.com/assets/icon-edit-button-8d0f2493aa649d9e18d5cf27ee32c93aaa6488ddda85b481f6ca341b85fde845.png" alt="Icon edit button" />
+</a>
+  <a class="item-link group" data-url="https://jobs.lever.co/dribbble/09bc0d1f-05b2-4547-9a28-bedac7723032" rel="nofollow" href="/jobs/14795?source=footer">
+    <span class="item-info">
+      <span class="item-title">Dribbble</span>
+      <span class="item-desc">Senior Visual Designer</span>
+    </span>
+
+    <span class="item-meta">Anywhere</span>
+
+</a></li>
+
+</ol>
+
+          </div>
+
+      </div>
+
+      <div class="footer-mod">
+          <div class="ad carbon target">
+  <div id="carbonads">
+    <span>
+      <span class="carbon-wrap">
+        <a class="carbon-img" href="/overtime">
+          <img width="130" style="max-width: 130px;" src="https://cdn.dribbble.com/assets/overtime-ad-8453e6307f1e70254171568b7d4e733be2e98231e6d3c3a93041c588feb3ced1.png" alt="Overtime ad" />
+</a>        <a class="carbon-text" href="/overtime">
+          Dribbble’s official podcast goes behind the shots of your favorite designers.
+</a>      </span>
+      <a class="carbon-poweredby" href="/overtime">Listen to Overtime</a>
+    </span>
+  </div>
+</div>
+        <h4 id="pixels-total" class="group">
+  <strong>1,021,322,565,047</strong> pixels dribbbled
+</h4>
+
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="footer-mod">
+        <p class="network">
+          &copy; 2018 Dribbble. All rights reserved.
+        </p>
+      </div>
+
+      <div class="footer-mod">
+        <h5 class="remote-love">
+          Made with &hearts; remotely from
+          <div class="remote-locations">
+  <span>Salem, MA</span>
+  <span>Walnut Creek, CA</span>
+  <span>Victoria, BC</span>
+  <span>Centennial, CO</span>
+  <span>Bournemouth, UK</span>
+  <span>Vancouver, BC</span>
+  <span>Montreal, QC</span>
+  <span>Roseville, MN</span>
+  <span>Rome, GA</span>
+  <span>Peterborough, NH</span>
+  <span>Davis, CA</span>
+  <span>Oakland, CA</span>
+  <span>Austin, TX</span>
+  <span>Mystic, CT</span>
+  <span>Longueuil, QC</span>
+  <span>Saint Charles, MO</span>
+  <span>Des Moines, IA</span>
+  <span>Salt Lake City, UT</span>
+  <span>Lander, WY</span>
+  <span>Scarsdale, NY</span>
+  <span>Cote St Luc, QC</span>
+</div>
+
+        </h5>
+      </div>
+    </div>
+  </div>
+</div> <!-- /footer -->
+
+
+
+
+  
+
+  <div class="shot-overlay" style="display:none;" tabindex="-1">
+    <a href="#" class="close-overlay" aria-label="close">
+      <img src="https://cdn.dribbble.com/assets/icon-shot-x-light-40c073cd65443c99d4ac129b69bf578c8cf97d69b78990c00c4f8c5873b0d601.png" alt="Icon shot x light" />
+    </a>
+
+    <div class="overlay-content group" style="display: none"></div>
+  </div>
+  <div class="attachment-overlay" style="display:none;" tabindex="-1"></div>
+<div id="signup-overlay" class="overlay ">
+  <div class="lightbox">
+    <a href="#" class="close" aria-label="close"><img alt="close" src="https://cdn.dribbble.com/assets/icon-overlay-x-2x-b7df2526b4c26d4e8410a7c437c433908be0c7c8c3c3402c3e578af5c50cf5a5.png" /></a>
+    <div class="display">
+          
+
+<p class="signup-reason"></p>
+
+<div class="signup-container">
+  <div class="pitch-column">
+    <img width="50" height="50" src="https://cdn.dribbble.com/assets/dribbble-ball-192-ec064e49e6f63d9a5fa911518781bee0c90688d052a038f8876ef0824f65eaf2.png" alt="Dribbble ball 192" />
+    <p>A community of designers sharing their work, process, and current projects.</p>
+    <div class="benefits">
+      <h3>Sign up for Dribbble to…</h3>
+      <ul>
+        <li>Get inspired and build your network</li>
+        <li>If invited, share your work and grow</li>
+        <li>Message designers about work opportunities <span>(3 free messages)</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="form-column">
+      <div class="signup-social">
+        <a class="form-btn auth-twitter auth-top social-signup" href="https://dribbble.com/auth/Twitter">
+          <img alt="Twitter logo" src="https://cdn.dribbble.com/assets/share/icon-twitter-2x-0e5658d07b0ca612142544ba358761c215a1483d82248918fab1b78d9b7381be.png" />
+          Sign up with Twitter
+</a>        
+<a class="form-btn auth-facebook social-signup" href="/auth/facebook/callback">
+  <img alt="Facebook logo" src="https://cdn.dribbble.com/assets/share/icon-facebook-2x-0bb8f0963af1c65ce2fc74b945340a58b2f7f435f05711af9ed02d7a449b98f3.png" />
+  Sign up with Facebook
+</a>
+        
+<a class="form-btn auth-google social-signup" href="/auth/google_signup">
+  <img alt="Google logo" src="https://cdn.dribbble.com/assets/share/icon-google-2x-0713eb02ed20fa4935e64ec237d6ebf61dfc232b75108a54fd91b28329d57b3a.png" />
+  Sign up with Google
+</a>
+      </div>
+
+      <span class="signup-or-label">or</span>
+
+      <a class="email-signup-toggle" href="#">Sign up with email</a>
+
+    <form class="hide-remove gen-form with-messages signup email-form" id="new_user" action="https://dribbble.com/signup" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="knBE3iDkpApjc3Vh7uCiervIpiLq21oqLM20kakHzWDwfS7dxo5XmkyIpW3cGvlet0AVzfqeDWcvF4pRDuzsFw==" />
+      <div class="errorExplanation" style="display: none;">
+        <h2>Clank!</h2>
+        <ul></ul>
+      </div>
+
+      <div class="form-field">
+        <fieldset class="user_name"><input placeholder="First and last name" type="text" name="user[name]" id="user_name" /></fieldset>
+      </div>
+
+      <div class="form-field">
+        <fieldset class="user_email"><input placeholder="Email" type="text" name="user[email]" id="user_email" /></fieldset>
+      </div>
+
+      <div class="form-field">
+        <fieldset class="user_login"><input placeholder="Username" autocorrect="off" autocapitalize="off" type="text" name="user[login]" id="user_login" /></fieldset>
+      </div>
+
+      <div class="form-field">
+        <fieldset class="user_password"><input placeholder="Password" type="password" name="user[password]" id="user_password" /></fieldset>
+        <p class="message">Minimum 6 characters</p>
+      </div>
+
+      <div class="form-field no-label check-wrap opt-in">
+  <fieldset>
+    <label for="user_agree_to_terms">
+      <input type="checkbox" id="user_agree_to_terms" name="user[agree_to_terms]" />
+      Creating an account means you’re okay with our
+      <a target="_blank" href="/terms">Terms of Service</a>,
+      <a target="_blank" href="/privacy">Privacy Policy</a>, and our default
+      <a target="_blank" href="/notifications">Notification Settings</a>.
+    </label>
+  </fieldset>
+</div>
+
+
+      <div class="form-btns">
+        <input type="submit" name="commit" value="Create Account" class="form-sub btn" />
+      </div>
+
+      
+<div class="g-recaptcha" data-sitekey="6LdmBTIUAAAAAM4NIokaWu8p3BBuYEw3CxuDdyg_" data-callback="captchaCallback" data-size="invisible" data-badge="inline"></div>
+
+<div class="captcha-not-loaded processing">
+  <p>Uh oh… We’re still waiting for our <a href="https://www.google.com/recaptcha/intro/index.html" target="_blank" rel="noopener noreferrer">spam prevention code</a> to load.</p>
+  <p>If this message doesn’t go away soon, please ensure JavaScript is enabled, your ad blocker is disabled, and reload the page to try again.</p>
+</div>
+
+</form>
+    <p class="already-a-member">Already a member? <a href="/session/new?return_to=%2Fshots%2F3160360-Coffee-Loading">Sign in</a></p>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+<script src="//js.honeybadger.io/v0.2/honeybadger.min.js"></script>
+<script>
+Honeybadger.configure({
+  api_key: '1f1d2734', // Public API key
+  environment: 'production',
+  disabled: false,
+  onerror: false,
+  ssl: true
+});
+
+Honeybadger.setContext({
+  userId: null,
+  serverTime: 1523708220000,
+  clientTime: +new Date(),
+  clientTimeString: (new Date()).toString()
+})
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!-- jquery failover -->
+<script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape('%3Cscript src="https://cdn.dribbble.com/assets/jquery-1.8.3.min-28c5c3a9c0295e16a0f5b358a5bb3bca0f25e383f99c64afb9dc315e2dac765a.js">%3C/script>'))
+  }
+</script>
+
+
+
+<script src="https://cdn.dribbble.com/assets/global-6ffd1ed812c2fe53e3f2d5c334f05d6f0f77b97dff47e9da090542932c089b09.js"></script>
+
+<script>
+$(document).ready(function() {
+  new Dribbble.Bucket({
+    "target" : "a[data-bucket-add]",
+    "container" : "[data-bucket-container]",
+    "listUrl" : "/shots/3160360-Coffee-Loading/bucketings/new",
+    "screenshotId" : "3160360-Coffee-Loading"
+  });
+});
+</script>
+
+  <script>
+    new Dribbble.ShareSheet({
+      area: 'Shot',
+      selector: "[data-share-shot=3160360]",
+      body: "Coffee Loading... by Yiker",
+      imageUrl: "https://cdn.dribbble.com/users/1399014/screenshots/3160360/loadingdb86.gif",
+      bodies: {
+        twitter: "Coffee Loading... by Yiker:"
+      },
+      utm: {
+        source: "Shot",
+        campaign: "exciting",
+        content: "Coffee Loading..."
+      }
+    })
+  </script>
+<script src="https://cdn.dribbble.com/assets/shots-manifest-cae2ffa03e8d9c04ba4d7c3ecf5c8c5d2fe6997f122de5ca35ae41ecb7eb42db.js"></script>
+<script>
+
+  new Dribbble.Comments('/shots/3160360-Coffee-Loading/comments', function() {
+  },
+  function() {
+  })
+
+if (Dribbble.isMobile()) {
+  $(".the-shot .single-img").swipe({
+    fingers: 1,
+    threshold: 200,
+    swipeLeft: Screenshot.Page.next,
+    swipeRight: Screenshot.Page.prev
+  });
+}
+
+  $('.zoomable .single-img').click(Screenshot.Shot.twotimes)
+
+
+Dribbble.Shots.add([{
+  id: '3160360',
+  ga: []
+}])
+
+Dribbble.Segment.track("shot_viewed", {shot_id: 3160360})
+</script>
+<script>
+  Dribbble.Ads.enable();
+  Dribbble.Ads.load("shot");
+</script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+
+    ga("create", "UA-24041469-1", "auto", {
+      "sampleRate": 5.0
+    });
+  </script>
+
+<script>
+!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+  analytics.load("NebmEAHRg0JSoZUQ3dvYl38FE7sSSTQi");
+}}();
+</script>
+
+<script>
+  var segmentPageProperties = {controller: "screenshots", action: "show"}
+  if (window.location.pathname == "/") {
+    Dribbble.Analytics.namedRoot = "/shots";
+    Dribbble.Analytics.logDribbbleGAPageView("/")
+    segmentPageProperties.url = Dribbble.Analytics.namedRoot
+  } else {
+    Dribbble.Analytics.logDribbbleGAPageView("/shots/3160360-Coffee-Loading")
+  }
+  Dribbble.Segment.page(segmentPageProperties)
+  Dribbble.Segment.processPending();
+
+</script>
+
+
+  
+
+
+</body>
+</html>
